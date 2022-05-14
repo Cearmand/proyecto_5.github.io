@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;left: 0;
+}
+.conte{
+    width: 90%;
+    max-width: 1200%;
+    margin: auto;
+}
+.conte .btn-menu, .logo{
+    float: left;
+    line-height: top;
+}
+.conte .btn-menu label{
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+.logo h1{
+    color: black;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.conte .menu{
+    float: right;
+    line-height: 70px;
+}
+.conte .menu a{
+    display: inline-block;
+    padding: 15px 10px;/*Relleno*/
+    line-height: normal;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+}
+.conte .menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding: 5px 10px;
+}
+/*Menu lateral*/
+#btn-menu{
+    display: none;
+}
+.conteiner-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0; left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .conteiner-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
